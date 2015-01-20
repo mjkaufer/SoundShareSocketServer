@@ -1,5 +1,10 @@
 var ws = require("nodejs-websocket")
 console.log("START");
+
+var port = process.env.PORT || 3000
+
+console.log("PORT",port);
+
 // Scream server example: "hi" -> "HI!!!"
 var server = ws.createServer(function (conn) {
     console.log("New connection")
@@ -15,4 +20,4 @@ var server = ws.createServer(function (conn) {
         console.log(reason);
     })
 
-}).listen(8080)
+}).listen(port)
