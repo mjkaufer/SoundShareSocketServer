@@ -1,9 +1,9 @@
 var ws = require("nodejs-websocket")
 console.log("START");
 
-var port = process.env.PORT || 3000
+var port = process.env.OPENSHIFT_NODEJS_PORT || 3000
 
-console.log("PORT",port);
+console.log("PORT",port)
 
 // Scream server example: "hi" -> "HI!!!"
 var server = ws.createServer(function (conn) {
