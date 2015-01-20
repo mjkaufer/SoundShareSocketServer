@@ -1,0 +1,33 @@
+{
+  "name": "SoundShare",
+  "version": "1.0.0",
+  "description": "Sound Share Websocket Server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjkaufer/SoundShareSocketServer"
+  },
+  "keywords": [
+    "SoundShare",
+    "socket.io",
+    "Websockets"
+  ],
+  "author": "Matthew Kaufer (@mjkaufer)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/mjkaufer/SoundShareSocketServer/issues"
+  },
+  "homepage": "https://github.com/mjkaufer/SoundShareSocketServer",
+  "dependencies": {
+    "nodejs-websocket": "^1.2.0",
+    "ws": "^0.6.5"
+  },
+  "subdomain": "ss",
+  "engines": {
+    "node": "0.10.x"
+  }
+}
